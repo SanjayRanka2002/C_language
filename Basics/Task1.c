@@ -31,6 +31,7 @@ void main(){
                 break;
             case 3:
                 printf("Maruti1000 Prise is 35000\n");
+                break;
             default:
                     printf("You enter incorrect Modal\n");
             }
@@ -59,6 +60,7 @@ void main(){
                 break;
             case 3:
                 printf("BMW Prise is 70000\n");
+                break;
             default:
                     printf("You enter incorrect Modal\n");
             }
@@ -87,6 +89,7 @@ void main(){
                 break;
             case 3:
                 printf("Audi007 Prise is 200000\n");
+                break;
             default:
                     printf("You enter incorrect Modal\n");
             }

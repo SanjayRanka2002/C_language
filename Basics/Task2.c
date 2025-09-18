@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main(){
     int select,current,withdraw,deposit,total;
-    printf("Balance Enquiry\n");
-    printf("Cash Withdraw\n");
-    printf("Cash Deposit\n");
+    printf("1.   Balance Enquiry\n");
+    printf("2.   Cash Withdraw\n");
+    printf("3.   Cash Deposit\n");
 
     printf("Please Enter Your Digit...:");
     scanf("%d",&select);
@@ -30,6 +30,9 @@ void main(){
         scanf("%d",&deposit);
         total=current+deposit;
         printf("Your Amount is %d",total);
+    break;
+    default:
+        printf("Enter correct input");
 
     }
 }
