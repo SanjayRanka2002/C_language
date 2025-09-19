@@ -1,6 +1,8 @@
 #include<stdio.h>
+//
 void main(){
-    int select,current,withdraw,deposit,total;
+    int select,withdraw,deposit,total;
+    int balance=50000;
     printf("1.   Balance Enquiry\n");
     printf("2.   Cash Withdraw\n");
     printf("3.   Cash Deposit\n");
@@ -8,17 +10,15 @@ void main(){
     printf("Please Enter Your Digit...:");
     scanf("%d",&select);
 
-    printf("Pls enter your Current Balance:");
-    scanf("%d",&current);
     switch(select){
     case 1:
-        printf("Your Account Balance is %d",current);
+        printf("Your Account Balance is %d",balance);
         break;
     case 2:
         printf("Enter ammount to withdraw :");
         scanf("%d",&withdraw);
-        total=current-withdraw;
-        if(withdraw<current){
+        total=balance-withdraw;
+        if(withdraw<balance){
             printf("Your cash Withraw succefully\n");
             printf("Your current account is %d\n",total);
         }else{
@@ -28,7 +28,7 @@ void main(){
     case 3:
         printf("Enter amount to deposit:");
         scanf("%d",&deposit);
-        total=current+deposit;
+        total=balance+deposit;
         printf("Your Amount is %d",total);
     break;
     default:

@@ -1,5 +1,6 @@
 #include<stdio.h>
 void main(){
+    //Assesment
     int price;
     int select;
     int amount;
@@ -61,7 +62,9 @@ void main(){
         printf("If you Want to continue press (Y/N)?");
         scanf(" %c",&k);
 
+
     }while(k =='y' || k == 'Y');
+
 
 
 }
