@@ -1,6 +1,7 @@
 #include<stdio.h>
 void main(){
     int n;
+    //Loops Ke Tasks
     //pattern 1
     printf("Enter a number that i make a pattern:");
     scanf("%d",&n);
