@@ -1,5 +1,6 @@
 #include<stdio.h>
 void main(){
+    /*
     //Question 1 or scanf
     char Name[]="shreeram";
     char Address[]="Ahamdabad";
@@ -92,6 +93,209 @@ void main(){
     }else{
         printf("\nNumber is Negative");
     }
+
+    //Check Leap Year Or Not
+    int leap;
+    printf("\nenter  Year to check year is leap or not :");
+    scanf("%d",&leap);
+    if(leap%4==0 || leap%100==0){
+        printf("\nYear is leap");
+    }else if(leap%400==0){
+        printf("\nYear is leap");
+    }else{
+        printf("\n Year is not leap");
+    }
+
+   //Max of Three Number
+   int x,y,z;
+   printf("\nEnter three numbers to check:");
+   scanf("%d%d%d",&x,&y,&z);
+    if(x>y){
+        if(x>z){
+            printf("\n x is big");
+        }else{
+            printf("\n z is big");
+        }
+    }else{
+        if(y>z){
+                printf("\n y is big");
+
+        }else{
+            printf("\n z is big");
+        }
+    }
+    //percentage
+    int marks1,marks2,marks3,marks4,marks5,additon,percent;
+    int all=500;
+    printf("\n Enter 5 numbers :");
+    scanf("%d%d%d%d%d",&marks1,&marks2,&marks3,&marks4,&marks5);
+    additon=marks1+marks2+marks3+marks4+marks5;
+    percent=additon*100/all;
+
+    printf("\n You Have Got %d ",percent);
+    if(percent>75){
+        printf("\nDistinction");
+    }else if(percent>60 && percent<=75){
+        printf("\nFirst class");
+
+    }else if(percent>50 && percent<=60){
+        printf("\nSecond class");
+
+    }else if(percent>35 && percent<=50 ){
+        printf("Pass clasee");
+
+    }else{
+        printf("You Fail");
+
+    }
+
+    //Switch
+    int days;
+    printf("\n1. Monday");
+    printf("\n2. Tuesday\n");
+    printf("\n3. Wednesday\n");
+    printf("\n4. Thursday\n");
+    printf("\n5. Friday\n");
+    printf("\n6. saturday\n");
+    printf("\n7. sunday\n");
+
+    printf("Enter Number :");
+    scanf("%d",&days);
+    switch(days){
+        case 1:
+            printf("You choose monday");
+            break;
+        case 2:
+            printf("You choose Tuesday");
+            break;
+         case 3:
+            printf("You choose Wednesday");
+            break;
+         case 4:
+            printf("You choose Thursday");
+            break;
+         case 5:
+            printf("You choose  Friday");
+            break;
+         case 6 :
+            printf("You choose saturday");
+            break;
+         case 7:
+            printf("You choose sunday");
+            break;
+         default:
+            printf("you entered wrong");
+
+
+    }
+
+    //operation
+    int a,b,option;
+    char operate;
+
+    printf("\n  + additon ");
+    printf("\n  - Substriction");
+    printf("\n   * multipication");
+    printf("\n   / for division");
+
+    printf("\n choose an option :");
+    scanf("%c",&operate);
+
+    switch(operate){
+        case '+':
+        printf("\n Enter first number :");
+        scanf("%d",&a);
+        printf("\n Enter operator ");
+        scanf(" %c",&operate);
+        printf("\n Enter second number :");
+        scanf("%d",&b);
+        printf("\n sum is %d & %d is =%d",a,b,a+b);
+
+
+        break;
+
+        case'-':
+        printf("\n Enter first number :");
+        scanf("%d",&a);
+        printf("\n Enter operator ");
+        scanf(" %c",&operate);
+        printf("\n Enter second number :");
+        scanf("%d",&b);
+         printf("\n min is %d & %d is =%d",a,b,a-b);
+        break;
+
+
+        case'*':
+        printf("\n Enter first number :");
+        scanf("%d",&a);
+        printf("\n Enter operator ");
+        scanf(" %c",&operate);
+        printf("\n Enter second number :");
+        scanf("%d",&b);
+         printf("\n mul is %d & %d is =%d",a,b,a*b);
+        break;
+
+
+        case'/':
+        printf("\n Enter first number :");
+        scanf("%d",&a);
+        printf("\n Enter operator ");
+        scanf(" %c",&operate);
+        printf("\n Enter second number :");
+        scanf("%d",&b);
+         printf("\n min is %d & %d is =%d",a,b,a/b);
+        break;
+
+        default:
+            printf("\n Enter Valid input :");
+
+    }
+    */
+
+    int option,triangle,circle,rectangle,l,b,r,v,h;
+    printf("1.  area of triangle");
+    printf("\n 2.  area of circle");
+    printf("\n 3.  area of rectangle");
+
+    printf("\n Enter yout option :");
+    scanf("%d",&option);
+
+    switch(option){
+    case 1:
+        printf("\n Enter base :");
+        scanf("%d",&v);
+        printf("\n Enter height :");
+        scanf("%d",&h);
+        triangle=v*h/2;
+        printf("area of triangle is %d ",triangle);
+        break;
+    case 2:
+        printf("\n Enter radious :");
+        scanf("%d",&r);
+       circle=3.14*r*r;
+        printf("area of circle is %d ",circle);
+        break;
+    case 3:
+        printf("\n Enter length :");
+        scanf("%d",&l);
+        printf("\n Enter breadth :");
+        scanf("%d",&b);
+        rectangle=l*b;
+        printf("area of rectangle is %d ",rectangle);
+        break;
+    default:
+        printf("\n Enter valid input:");
+
+    }
+
+
+
+
+
+
+
+
+
 
 
 
