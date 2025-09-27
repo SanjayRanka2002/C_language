@@ -250,7 +250,7 @@ void main(){
             printf("\n Enter Valid input :");
 
     }
-    */
+
 
     int option,triangle,circle,rectangle,l,b,r,v,h;
     printf("1.  area of triangle");
@@ -289,15 +289,93 @@ void main(){
     }
 
 
+    //ten elements print
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i);
+    }
+
+    //51 to 50 for while loop
+    int i=51;
+    while(i<=60){
+            printf("%d\n",i);
+        i++;
+    }
+
+    //100 to 81
+     int i=100;
+    do{
+    printf("%d\n",i);
+    i--;
+    }while(i>=81);
 
 
+    //factorial of given number
+    int number;
+    printf("Enter a number for factorial:");
+    scanf("%d",&number);
+
+    int f=1;
+    for(int i=1;i<=number;i++){
+        f=f*i;
+
+    }
+     printf("factorial is %d",f);
 
 
+    //Table of given number
+    int num;
+    printf("Enter number Of Table :");
+    scanf("%d",&num);
+    for(int i=num;i<=num*10;i=i+num){
+        printf("%d\n",i);
+    }
 
 
+    //Reverse print
+    int ber;
+    int last=0;
+    printf("Enter number to reverse:");
+    scanf("%d",&ber);
+    while(ber>0){
+        last=ber%10;
+        printf("%d",last);
+        ber=ber/10;
+    }
 
-
-
-
-
+    //Max of given number
+    int value;
+    int last;
+    int max=0;
+    printf("Enter a number:");
+    scanf("%d",&value);
+    while(value>0){
+        last=value%10;
+        if(last>max){
+        max=last;
+        value=value/10;
+       }
 }
+    printf(" max is %d",max);
+
+    //summation of given number
+    int option;
+    int last=0;
+    int sum=0;
+    printf("Enter a number :");
+    scanf("%d",&option);
+    while(option>0){
+            last=option%10;
+            sum=sum+last;
+            option=option/10;
+    }
+    printf("summation of this :%d",sum);
+    */
+
+    //summation of first and last number
+    int pumber;
+    int last;
+    int first=0;
+
+
+
+ }

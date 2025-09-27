@@ -29,14 +29,14 @@ void main(){
     n=n%10;
 
 
-    printf("\n 2000 : %d ",a2000);
-    printf("\n 1000 : %d ",b1000);
-    printf("\n 500 : %d ",c500);
-    printf("\n 200 : %d ",d200);
-    printf("\n 100 : %d ",e100);
-    printf("\n 50 : %d ",f50);
-    printf("\n 20 : %d ",g20);
-    printf("\n 10 : %d ",h10);
+    printf("\n Rs. 2000 : %d ",a2000);
+    printf("\n Rs. 1000 : %d ",b1000);
+    printf("\n Rs.500 : %d ",c500);
+    printf("\n Rs.200 : %d ",d200);
+    printf("\n Rs.100 : %d ",e100);
+    printf("\n Rs.50 : %d ",f50);
+    printf("\n Rs.20 : %d ",g20);
+    printf("\n Rs.10 : %d ",h10);
 
 
 

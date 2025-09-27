@@ -1,39 +1,47 @@
 #include<stdio.h>
+
+    //2D array with Fuction
+
+    void abc(int arr[3][3]){
+
+
+
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+               if(i>=j){
+                 printf("%d",arr[i][j]);
+               }
+            }
+            printf("\n");
+        }
+    }
+
+
 void main(){
-    //user input se array banana
-    int array[5];
-    printf("Enter 5 Numbers :\n");
-    for(int i=0;i<5;i++){
-        scanf("%d",&array[i]);
-    }
-    printf("\n");
+    /*
+    //array Practise
+    int array[4][20];
 
-    for(int i=0;i<5;i++){
-        printf("%d",array[i]);
-    }
-    printf("\n");
-    printf("Dusra Array Print Ho rha hai Niche deko\n");
-
-    //Bina User Input se array banana
-    int arr[]={2,4,6,8,10};
-    for(int i=0;i<5;i++){
-        printf("%d",arr[i]);
-    }
-    printf("\n");
-    //Names Ka Array iske liye 2d array lena hoga
-
-
-    char Name[5][20];
-    printf("Enter 5 Names : \n");
-    for(int i=0;i<5;i++){
-        scanf(" %s",&Name[i]);
-
+    printf("Enter 4 Names :");
+    for(int i=0;i<4;i++){
+        scanf("%s",&array[i]);
     }
 
-
-    for(int i=0;i<5;i++){
-        printf("\n%s",Name[i]);
+     for(int i=0;i<4;i++){
+        printf("%s\n",&array[i]);
     }
+    */
+
+
+      int arr[3][3];
+         printf("Enter 9 number:\n");
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                scanf("%d",&arr[i][j]);
+            }
+        }
+    abc(arr);
+
 
 
 }
