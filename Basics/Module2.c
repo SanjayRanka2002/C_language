@@ -369,12 +369,124 @@ void main(){
             option=option/10;
     }
     printf("summation of this :%d",sum);
-    */
+
 
     //summation of first and last number
     int pumber;
     int last;
     int first=0;
+
+    //star pattern 1
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("*",i);
+        }
+        printf("\n");
+
+    }
+
+    //diffrent number pattern
+
+     for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+
+    }
+
+    //same number pattern
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",i);
+        }
+        printf("\n");
+
+    }
+
+    //star by left side
+     for(int i=1;i<=5;i++){
+        for(int k=1;k<=5-i;k++){
+            printf(" ",k);
+        }
+        for(int j=1;j<=i;j++){
+            printf("*",i);
+        }
+        printf("\n");
+
+    }
+
+        //star by left side
+     for(int i=1;i<=5;i++){
+        for(int k=1;k<=5-i;k++){
+            printf(" ",k);
+        }
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+
+    }
+
+     //star pattern 2
+     int count=1;
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",count);
+            count++;
+        }
+        printf("\n");
+
+    }
+
+    //odd amd even logic
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+           if((i+j)%2==0){
+            printf("1");
+           }else {
+               printf("0");
+           }
+        }
+        printf("\n");
+
+    }
+
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",i*i);
+        }
+        printf("\n");
+
+    }
+
+
+    int array[]={51,71,82,87,91};
+    for(int i=0;i<5;i++){
+        printf("%d ",array[i]);
+    }
+
+    int arr[5];
+
+    printf("Enter Five Numbers:\n");
+    for(int i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+    }
+
+    printf("Array is : ");
+    for(int i=0;i<5;i++){
+        printf("%d ",arr[i]);
+    }
+
+    */
+    //count of odd and even number
+
+
+
+
+
+
+
 
 
 
