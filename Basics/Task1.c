@@ -19,18 +19,18 @@ void main(){
             printf("2.  Maruti900\n");
             printf("3.  Maruti1000\n");
 
-            printf("Pls select an option to get modal prise\n");
+            printf("Pls select an option to get modal price\n");
             scanf("%d",&modal);
 
             switch(modal){
             case 1:
-                printf("Maruti800 Prise is 25000\n");
+                printf("Maruti800 Price is 25000\n");
                 break;
             case 2:
-                printf("Maruti900 Prise is 30000\n");
+                printf("Maruti900 Price is 30000\n");
                 break;
             case 3:
-                printf("Maruti1000 Prise is 35000\n");
+                printf("Maruti1000 Price is 35000\n");
                 break;
             default:
                     printf("You enter incorrect Modal\n");
@@ -53,13 +53,13 @@ void main(){
 
             switch(modal){
             case 1:
-                printf("BMW200 Prise is 50000\n");
+                printf("BMW200 Price is 50000\n");
                 break;
             case 2:
-                printf("BMW300 Prise is 60000\n");
+                printf("BMW300 Price is 60000\n");
                 break;
             case 3:
-                printf("BMW Prise is 70000\n");
+                printf("BMW Price is 70000\n");
                 break;
             default:
                     printf("You enter incorrect Modal\n");
@@ -82,13 +82,13 @@ void main(){
 
             switch(modal){
             case 1:
-                printf("Audi005 Prise is 100000\n");
+                printf("Audi005 Price is 100000\n");
                 break;
             case 2:
-                printf("Audi006 Prise is 150000\n");
+                printf("Audi006 Price is 150000\n");
                 break;
             case 3:
-                printf("Audi007 Prise is 200000\n");
+                printf("Audi007 Price is 200000\n");
                 break;
             default:
                     printf("You enter incorrect Modal\n");

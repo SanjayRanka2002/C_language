@@ -19,7 +19,7 @@ void main(){
     case 1:
         printf("You  select Pizza. \n");
         price=180;
-        printf("Enter the quantiy: ");
+        printf("Enter the quantity: ");
         scanf("%d",&n);
         amount=price*n;
         total=amount;

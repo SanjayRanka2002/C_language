@@ -1,47 +1,33 @@
 #include<stdio.h>
-
-    //2D array with Fuction
-
-    void abc(int arr[3][3]){
-
-
-
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-               if(i>=j){
-                 printf("%d",arr[i][j]);
-               }
-            }
-            printf("\n");
-        }
-    }
-
-
 void main(){
-    /*
-    //array Practise
-    int array[4][20];
+int range;
+printf("Enter a number you want to range :");
+scanf("%d",&range);
 
-    printf("Enter 4 Names :");
-    for(int i=0;i<4;i++){
-        scanf("%s",&array[i]);
+int array[range];
+
+printf("Enter Numbers you want to print in array:");
+
+
+for(int i=0;i<range;i++){
+    scanf("%d",&array[i]);
+}
+int max=array[0];
+int min=array[0];
+printf("array is :\n");
+for(int i=0;i<range;i++){
+    if(array[i]>max){
+        max=array[i];
     }
 
-     for(int i=0;i<4;i++){
-        printf("%s\n",&array[i]);
+    if(array[i]< min){
+        min=array[i];
     }
-    */
 
+}
 
-      int arr[3][3];
-         printf("Enter 9 number:\n");
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                scanf("%d",&arr[i][j]);
-            }
-        }
-    abc(arr);
-
+printf("max is :%d",max);
+printf("\nmin is :%d",min);
 
 
 }

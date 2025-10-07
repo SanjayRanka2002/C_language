@@ -1,31 +1,31 @@
 #include<stdio.h>
 #include<string.h>
-
-struct details{
-    int id;
-    char name[30];
-    float salary;
-
+struct Textbook {
+    int bookid;
+    float price;
+    char title[15];
 };
-
 void main(){
-    struct details d[3];
-    printf("Enter Details of employee :\n");
-
-    for(int i=0;i<3;i++){
-     printf("Enter Your Id:");
-     scanf("%d",&d[i].id);
-     printf("Enter Your Name:");
-     scanf("%s",&d[i].name);
-     printf("Enter Your salary:");
-     scanf("%f",&d[i].salary);
-     }
+    int n;
+    printf("Enter number of books you want number:");
+    scanf("%d",&n);
+    struct Textbook t[n];
+    printf("Enter detail to book your book:\n");
 
 
-     for(int j=0;j<3;j++){
-     printf("Id = %d\n",d[j].id);
-     printf("Name = %s\n",d[j].name);
-      printf("Salary = %.1f\n",d[j].salary);
+    for(int i=0;i<n;i++){
+            printf("Enter your book id : ");
+            scanf("%d",&t[i].bookid);
+            printf("Enter your book price : ");
+            scanf("%f",&t[i].price);
+            printf("Enter your book title : ");
+            scanf(" %s",&t[i].title);
+        }
 
-     }
+    for(int j=0;j<n;j++){
+            printf("book id : %d\n",t[j].bookid);
+            printf("book price : %f\n",t[j].price);
+            printf("\n book title : %s",t[j].title);
+
+          }
 }
