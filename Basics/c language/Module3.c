@@ -2,7 +2,7 @@
 void main(){
     //Question 1
     //First Type
-    /*
+
     int a,b;
     int operate;
 
@@ -303,7 +303,7 @@ for(int i=1;i<=n;i++){
 }
 printf("Resultant is :%d",sum);
 
-*/
+
         //Type 2
 
 int k;
@@ -328,6 +328,21 @@ for(int i=1;i<=k;i++){
 
 }
 printf("Resultant is :%d",mul);
+
+
+
+//Fibonacci series
+int n,t1=0,t2=1,next;
+
+printf("Enter a range:");
+scanf("%d",&n);
+for(int i=1;i<=n;i++){
+    printf("%d ",t1);
+    next=t1+t2;
+    t1=t2;
+    t2=next;
+}
+
 
 
 }

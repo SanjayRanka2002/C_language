@@ -6,9 +6,9 @@ void main(){
     printf("enter two numbers\n");
     scanf("%d%d",&a,&b);
     printf("sum of %d and %d is=%d\n",a,b,a+b);
-     printf("sub of %d and %d is=%d\n",a,b,a-b);
-      printf("mul of %d and %d is=%d\n",a,b,a*b);
-       printf("div of %d and %d is=%d\n",a,b,a/b);
+    printf("sub of %d and %d is=%d\n",a,b,a-b);
+    printf("mul of %d and %d is=%d\n",a,b,a*b);
+    printf("div of %d and %d is=%d\n",a,b,a/b);
 //assignment operator
 int number;
 number+=1;

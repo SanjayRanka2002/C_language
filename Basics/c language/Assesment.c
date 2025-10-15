@@ -5,12 +5,13 @@ void main(){
     int select;
     int amount;
     int total;
+    int allamount;
     int n;
     char k;
     do{
     printf("1.Pizza   price =180rs/pcs\n");
     printf("2.Burger  price =100rs/pcs\n");
-    printf("3.Dosa    price =150rs/pcs\n");
+    printf("3.Dosa 3   price =150rs/pcs\n");
     printf("4.Idli    price =50rs/pcs\n\n");
 
         printf("please, Enter a digit you want :");
@@ -22,7 +23,8 @@ void main(){
         printf("Enter the quantity: ");
         scanf("%d",&n);
         amount=price*n;
-        total=amount;
+        total=total+amount;
+
         printf("Amount : %d\n",amount);
         printf("Total Amount is = %d\n",total);
         break;
@@ -32,7 +34,7 @@ void main(){
         printf("Enter the quantiy: ");
         scanf("%d",&n);
         amount=price*n;
-        total=amount;
+        total=total+amount;
         printf("Amount : %d\n",amount);
         printf("Total Amount is = %d\n",total);
         break;
@@ -42,7 +44,7 @@ void main(){
         printf("Enter the quantiy: ");
         scanf("%d",&n);
         amount=price*n;
-        total=amount;
+        total=total+amount;
         printf("Amount : %d\n",amount);
         printf("Total Amount is = %d\n",total);
         break;
@@ -52,7 +54,7 @@ void main(){
         printf("Enter the quantiy: ");
         scanf("%d",&n);
         amount=price*n;
-        total=amount;
+        total=total+amount;
         printf("Amount : %d\n",amount);
         printf("Total Amount is = %d\n",total);
         break;
@@ -63,7 +65,10 @@ void main(){
         scanf(" %c",&k);
 
 
+
     }while(k =='y' || k == 'Y');
+
+
 
 
 
